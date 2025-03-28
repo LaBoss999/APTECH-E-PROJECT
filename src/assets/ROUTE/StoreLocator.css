@@ -1,0 +1,93 @@
+/* Store Locator Page Styling */
+.store-locator {
+  padding: 2rem;
+  background-color: #1a1f3c; /* Navy Blue */
+  color: #b0b3c3; /* Light Gray */
+  text-align: center;
+}
+
+/* Page Heading */
+.store-locator h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #d4af37; /* Gold */
+}
+
+/* Search Container */
+.store-locator .search-container {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.store-locator .search-container input {
+  padding: 0.8rem;
+  width: 250px;
+  border: 1px solid #d4af37; /* Gold Border */
+  border-radius: 5px;
+  background-color: #2c2f40; /* Dark Gray */
+  color: #b0b3c3; /* Light Gray */
+}
+
+.store-locator .search-container input::placeholder {
+  color: #b0b3c3; /* Light Gray */
+}
+
+.store-locator .search-container button {
+  padding: 0.8rem 1rem;
+  background-color: #d4af37; /* Gold */
+  color: #1a1f3c; /* Navy Blue */
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.store-locator .search-container button:hover {
+  background-color: #b78f26; /* Slightly Darker Gold */
+}
+
+/* Store Location Sections */
+.store-locator section {
+  background-color: #2c2f40; /* Dark Gray */
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+/* Store List */
+.store-locator ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.store-locator ul li {
+  margin-bottom: 1rem;
+  color: #b0b3c3; /* Light Gray */
+}
+
+/* Store Service List */
+.store-locator .services-list {
+  list-style-type: square;
+  color: #d4af37; /* Gold */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .store-locator .search-container {
+      flex-direction: column;
+  }
+
+  .store-locator .search-container input,
+  .store-locator .search-container button {
+      width: 100%;
+  }
+}

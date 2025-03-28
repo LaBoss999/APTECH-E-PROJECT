@@ -1,0 +1,102 @@
+/* General Styling */
+.products-page {
+  background-color: #0A0F30; /* Deep Navy Blue */
+  color: #F5C32C; /* Gold */
+  font-family: Arial, sans-serif;
+  padding: 40px;
+}
+
+/* Hero Section */
+.products-hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #1B1F45; /* Darker Navy */
+  color: #FFFFFF; /* White for contrast */
+}
+
+.products-hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #F5C32C; /* Gold */
+}
+
+.products-hero p {
+  font-size: 1.2rem;
+  color: #B8B8B8; /* Silver */
+}
+
+/* Product Grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+/* Product Card */
+.product-card {
+  background-color: #1B1F45; /* Darker Navy */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  border: 1px solid #F5C32C; /* Gold border */
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  background-color: #131733; /* Even Darker Navy */
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-card h2 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #F5C32C; /* Gold */
+}
+
+.product-card p {
+  color: #B8B8B8; /* Silver */
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* Price Tag */
+.price {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #F5C32C; /* Gold */
+}
+
+/* Buy Button */
+.buy-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #F5C32C; /* Gold */
+  color: #0A0F30; /* Deep Navy */
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.buy-btn:hover {
+  background-color: #CFA32C; /* Darker Gold */
+  color: #FFFFFF;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .products-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}

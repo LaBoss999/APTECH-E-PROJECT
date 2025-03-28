@@ -1,0 +1,70 @@
+/* Technology Page Container */
+.technology-page {
+  padding: 2rem;
+  background-color: #1a1f3c; /* Navy Blue */
+  color: #b0b3c3; /* Light Gray */
+}
+
+/* Heading styles */
+.technology-page h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #d4af37; /* Gold */
+}
+
+.technology-page h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #d4af37; /* Gold */
+}
+
+/* Section styling */
+.technology-page section {
+  background-color: #2c2f40; /* Dark Gray */
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* List styling */
+.technology-page ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.technology-page ul li {
+  margin-bottom: 0.5rem;
+  color: #b0b3c3; /* Light Gray */
+}
+
+/* Hover Effects */
+.technology-page section:hover {
+  background-color: #0f1626; /* Deep Blue */
+  transition: 0.3s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .technology-page {
+      padding: 1.5rem;
+  }
+
+  .technology-page h1 {
+      font-size: 1.8rem;
+  }
+
+  .technology-page h2 {
+      font-size: 1.4rem;
+  }
+
+  .technology-page section {
+      padding: 1.2rem;
+  }
+}
