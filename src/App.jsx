@@ -1,15 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import Nav from "./components/Nav"; // Import Navbar
-import './assets/NAV BAR/nav';
-import Nav from './assets/NAV BAR/nav';
-import Footer from './assets/FOOTER/footer';
-import Home from './assets/ROUTE/Home';
-import Products from './assets/ROUTE/Products';
-import Technology from "./assets/ROUTE/Technology";
-import StoreLocator from "./assets/ROUTE/StoreLocator";
-import Support from "./assets/ROUTE/Support";
-import About from "./assets/ROUTE/About";
-import Contact from "./assets/ROUTE/Contact";
+import './NAV BAR/nav';
+import Nav from './NAV BAR/nav';
+import Footer from './FOOTER/footer';
+import Home from './ROUTE/Home';
+import Products from './ROUTE/Products';
+import Technology from "./ROUTE/Technology";
+import StoreLocator from "./ROUTE/StoreLocator";
+import Support from "./ROUTE/Support";
+import About from "./ROUTE/About";
+import Contact from "./ROUTE/Contact";
 
 
 // const Home = () => <h2 className="p-6">Welcome to Alberto Watch Company</h2>;
