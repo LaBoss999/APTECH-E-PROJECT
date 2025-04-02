@@ -53,7 +53,7 @@ nav ul li a:hover {
   transform: scale(1.05);
 }
 
-.nav-mob-close, .nav-mob-open {
+.nav-mob-open {
   fill: white;
   filter: invert(100%);
   cursor: pointer;

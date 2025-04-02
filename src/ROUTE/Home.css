@@ -114,7 +114,7 @@ body {
   background-color: #333333; /* Darker Black */
 }
 
-.featured-products .product-card img{
+.featured-products .product-card img {
   width: 100px;
   border-radius: 50%;
 }
@@ -199,5 +199,9 @@ body {
 
   .cta input {
     width: 200px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
   }
 }
