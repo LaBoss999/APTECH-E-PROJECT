@@ -1,18 +1,18 @@
 /* General Styling */
 .contact-us {
     font-family: Arial, sans-serif;
-    background-color: #1a1f3c; /* Navy Blue */
-    color: #b0b3c3; /* Light Gray */
+    background-color: #000; /* Black */
+    color: #fff; /* White */
     padding: 2rem;
     text-align: center;
 }
 
 /* Hero Section */
 .hero {
-    background-color: #d4af37; /* Gold */
-    color: #1a1f3c; /* Navy Blue */
-    padding: 60px 20px;
+    background-color: #fff; /* White */
+    color: #000; /* Black */
     border-radius: 10px;
+    padding: 40px 20px;
 }
 
 .hero h1 {
@@ -23,21 +23,22 @@
 .hero p {
     font-size: 1.2rem;
     margin-top: 10px;
+    color: #444; /* Dark Gray */
 }
 
 /* Contact Form Section */
 .contact-form-section {
-    background-color: #2c2f40; /* Dark Gray */
+    background-color: #333; /* Dark Gray */
     padding: 1.5rem;
     border-radius: 10px;
     margin: 2rem auto;
     max-width: 600px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
     text-align: left;
 }
 
 .contact-form-section h2 {
-    color: #d4af37; /* Gold */
+    color: #fff; /* White */
     text-align: center;
 }
 
@@ -55,17 +56,17 @@
 
 .input-group label {
     font-weight: bold;
-    color: #d4af37; /* Gold */
+    color: #fff; /* White */
 }
 
 .input-group input,
 .input-group textarea {
     padding: 10px;
-    border: 1px solid #d4af37;
+    border: 1px solid #fff; /* White Border */
     border-radius: 5px;
     font-size: 1rem;
-    background-color: #1a1f3c; /* Navy Blue */
-    color: #fff;
+    background-color: #000; /* Black */
+    color: #fff; /* White */
 }
 
 .input-group textarea {
@@ -74,8 +75,8 @@
 }
 
 .contact-form button {
-    background-color: #d4af37; /* Gold */
-    color: #1a1f3c; /* Navy Blue */
+    background-color: #fff; /* White */
+    color: #000; /* Black */
     font-weight: bold;
     padding: 12px;
     border: none;
@@ -85,21 +86,22 @@
 }
 
 .contact-form button:hover {
-    background-color: #f0c75e; /* Lighter Gold */
+    background-color: #ccc; /* Light Gray */
+    color: #000; /* Black */
 }
 
 /* Contact Info Section */
 .contact-info {
-    background-color: #2c2f40; /* Dark Gray */
+    background-color: #333; /* Dark Gray */
     padding: 1.5rem;
     border-radius: 10px;
     margin: 2rem auto;
     max-width: 600px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
 }
 
 .contact-info h2 {
-    color: #d4af37; /* Gold */
+    color: #fff; /* White */
 }
 
 .info-grid {
@@ -110,35 +112,35 @@
 }
 
 .info-box {
-    background-color: #1a1f3c; /* Navy Blue */
+    background-color: #000; /* Black */
     padding: 15px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
 }
 
 .info-box h3 {
-    color: #d4af37; /* Gold */
+    color: #fff; /* White */
     font-size: 1.2rem;
 }
 
 .info-box p {
-    color: #b0b3c3; /* Light Gray */
+    color: #bbb; /* Light Gray */
     font-size: 1rem;
 }
 
 /* Map Section */
 .map-section {
-    background-color: #2c2f40; /* Dark Gray */
+    background-color: #333; /* Dark Gray */
     padding: 1.5rem;
     border-radius: 10px;
     margin: 2rem auto;
     max-width: 800px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
 }
 
 .map-section h2 {
-    color: #d4af37; /* Gold */
+    color: #fff; /* White */
 }
 
 .map-container {

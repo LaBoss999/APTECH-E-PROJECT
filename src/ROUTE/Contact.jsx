@@ -5,7 +5,7 @@ const ContactUs = () => {
   return (
     <div className="contact-us">
       {/* Hero Section */}
-      <section className="hero">
+      <section className="her">
         <h1>Contact Us</h1>
         <p>We'd love to hear from you. Get in touch with us today!</p>
       </section>

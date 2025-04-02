@@ -7,20 +7,21 @@
 
 nav {
   width: 100%;
-  background-color: white; /* White background for a clean look */
-  color: navy; /* Navy blue text */
+  background-color: #ffffff; /* Black background */
+  color: black; /* White text */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 2rem 2rem;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1); /* Subtle white shadow for contrast */
 }
 
 /* Placeholder for Logo */
 nav .logo {
   font-size: 1.8rem;
   font-weight: bold;
-  color: navy; /* Navy logo */
+  text-decoration: none;
+  color: #000; /* White logo */
   text-transform: uppercase;
 }
 
@@ -37,10 +38,10 @@ nav ul li {
 
 /* Links */
 nav ul li a {
-  color: navy;
+  color: #000000; /* White text */
   text-decoration: none;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.4rem;
+  font-weight: bolder;
   transition: color 0.3s ease, transform 0.2s ease;
   padding: 8px 12px;
   border-radius: 5px;
@@ -48,12 +49,12 @@ nav ul li a {
 
 /* Hover Effect */
 nav ul li a:hover {
-  color: gold;
+  color: #bbbbbb; /* Light gray hover */
   transform: scale(1.05);
 }
 
-.nav-mob-close, .nav-mob-open{
-  fill: black;
+.nav-mob-close, .nav-mob-open {
+  fill: white;
   filter: invert(100%);
   cursor: pointer;
   display: none;
@@ -62,8 +63,6 @@ nav ul li a:hover {
 /* Mobile Responsive */
 @media (max-width: 768px) {
   nav {
-      /* flex-direction: column;
-      align-items: center; */
       padding: 1rem;
   }
 
@@ -86,7 +85,7 @@ nav ul li a:hover {
     align-items: start;
     top: 0;
     gap: 30px;
-    background: white;
+    background: #000000; /* Black background */
     width: 350px;
     height: 100%;
     z-index: 2;
@@ -94,10 +93,9 @@ nav ul li a:hover {
     right: -350px;
   }
 
-  
-
   nav ul li a {
       display: block;
       padding: 10px;
+      color: #ffffff; /* White text */
   }
 }

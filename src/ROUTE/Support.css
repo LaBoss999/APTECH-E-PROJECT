@@ -1,58 +1,71 @@
+/* Support Container */
 .support-container {
-    text-align: center;
-    padding: 40px;
-    background-color: #f9f9f9;
-  }
-  
-  .support-title {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .support-text {
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 30px;
-  }
-  
-  .support-sections {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .support-box {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
-  }
-  
-  .support-box h2 {
-    font-size: 1.5rem;
-    color: #222;
-  }
-  
-  .support-box p {
-    color: #666;
-    margin-bottom: 15px;
-  }
-  
-  .support-btn {
-    background: navy;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s ease;
-  }
-  
-  .support-btn:hover {
-    background: #0056b3;
-  }
-  
+  text-align: center;
+  padding: 40px;
+  background-color: #000; /* Black Background */
+  color: #fff; /* White Text */
+}
+
+/* Support Title */
+.support-title {
+  font-size: 2rem;
+  color: #fff; /* White */
+  margin-bottom: 10px;
+}
+
+/* Support Text */
+.support-text {
+  font-size: 1.2rem;
+  color: #bbb; /* Light Gray */
+  margin-bottom: 30px;
+}
+
+/* Support Sections */
+.support-sections {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Support Box */
+.support-box {
+  background: #1a1a1a; /* Darker Gray */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* Light white glow */
+  width: 300px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.support-box:hover {
+  background-color: #333; /* Slightly lighter gray for hover */
+}
+
+/* Support Box Title */
+.support-box h2 {
+  font-size: 1.5rem;
+  color: #fff; /* White */
+}
+
+/* Support Box Paragraph */
+.support-box p {
+  color: #ccc; /* Lighter Gray */
+  margin-bottom: 15px;
+}
+
+/* Support Button */
+.support-btn {
+  background: #000; /* Black */
+  color: #fff; /* White */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.support-btn:hover {
+  background: #555; /* Dark Gray on hover */
+}

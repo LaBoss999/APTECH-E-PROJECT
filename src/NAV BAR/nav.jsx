@@ -23,11 +23,7 @@ const Nav = () => {
       >
         {/* Logo Placeholder */}
         <Link to="/">
-          <img
-            src="/assets/logo.png" // Change this to your actual logo path
-            alt="Alberto Company Watches Logo"
-            className="h-10" // Adjust height as needed
-          />
+          <h1 className="logo">ALBERTO</h1>
         </Link>
         <img src={menu_open} onClick={openMenu} alt="" className="nav-mob-open" />
 
