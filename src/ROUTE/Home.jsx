@@ -1,18 +1,92 @@
 import "./Home.css";
 import bgvideo from "../../src/assets/bg-video.mp4";
-import watch1 from "../../src/assets/watch1.webp"
-import watch2 from "../../src/assets/watch2.webp"
-import watch3 from "../../src/assets/watch3.webp"
+import watch9 from '../assets/luxury1.jpeg'
+import watch10 from '../assets/luxury2.jpeg'
+import watch11 from '../assets/luxury3.jpeg'
+import watch4 from '../assets/luxury9.jpeg'
+import watch5 from '../assets/luxury10.jpeg'
+import watch6 from '../assets/luxury6.jpeg'
+import watch7 from '../assets/watch9.webp'
+import watch8 from '../assets/luxury11.jpeg'
+import watch1 from "../../src/assets/luxury12.jpg";
+import watch2 from "../../src/assets/luxury13.jpg";
+import watch3 from "../../src/assets/luxury14.jpg";
+
+
+const products = [
+  {
+    id: 1,
+    name: "Rolex Oyster Perpetual",
+    price: "$6,500",
+    description: "A timeless and versatile design from Rolex, featuring a self-winding movement and a sleek stainless steel case.",
+    image: watch1
+  },
+  {
+    id: 2,
+    name: "Cartier Santos de Cartier",
+    price: "$7,050",
+    description: "An iconic square-shaped watch with a rich history, offering a blend of elegance and functionality.",
+    image: watch2
+  },
+  {
+    id: 3,
+    name: "Omega Speedmaster Professional Moonwatch",
+    price: "$6,600",
+    description: "Known for its association with NASA missions, this chronograph is a symbol of durability and precision.",
+    image: watch3
+  },
+  {
+    id: 4,
+    name: "Audemars Piguet Royal Oak Selfwinding",
+    price: "$28,600",
+    description: "A legendary design featuring a distinctive octagonal bezel and integrated bracelet, embodying luxury and innovation.",
+    image: watch4
+  },
+  {
+    id: 5,
+    name: "Patek Philippe Calatrava",
+    price: "$33,113",
+    description: "A pure dress watch tradition, offering timeless elegance and exceptional craftsmanship.",
+    image: watch5
+  },
+  {
+    id: 6,
+    name: "Diesel Mr. Daddy 2.0",
+    price: "$325",
+    description: "A bold and edgy watch with oversized design, featuring multiple time zones and a striking appearance.",
+    image: watch6
+  },
+  {
+    id: 7,
+    name: "Fossil Townsman Chronograph",
+    price: "$145",
+    description: "A stylish chronograph watch with a vintage-inspired design, offering both functionality and classic appeal.",
+    image: watch7
+  },
+  {
+    id: 8,
+    name: "Michael Kors Slim Runway",
+    price: "$250",
+    description: "An elegant and minimalist watch, perfect for adding a touch of sophistication to any outfit.",
+    image: watch8
+  },
+  {
+    id: 9,
+    name: "Skagen Hagen Connected",
+    price: "$195",
+    description: "A modern smartwatch combining Scandinavian design with smart features, keeping you connected in style.",
+    image: watch9
+  }
+];
 
 
 const Home = () => {
-
-  const font ={
-    fontSize: '56px',
+  const font = {
+    fontSize: "56px",
   };
 
-  const pfont ={
-    fontSize: '22px',
+  const pfont = {
+    fontSize: "22px",
   };
 
   return (
@@ -24,8 +98,12 @@ const Home = () => {
           <source className="" src={bgvideo} type="video/mp4" />
         </video>
         <div className="content">
-          <h1 style={font} className="content-h1">Timeless Elegance, Unmatched Precision</h1>
-          <p stlye={pfont} className="content-p">Discover the finest luxury watches.</p>
+          <h1 style={font} className="content-h1">
+            Timeless Elegance, Unmatched Precision
+          </h1>
+          <p stlye={pfont} className="content-p">
+            Discover the finest luxury watches.
+          </p>
           <button className="content-btn">Explore Our Collection</button>
         </div>
       </section>
@@ -42,41 +120,19 @@ const Home = () => {
       {/* Featured Products */}
       <section className="featured-products text-center">
         <h2 className="section-title">Featured Watches</h2>
-        <div className="product-grid">
-          <div className="product-card">
-            <img
-              src={watch1}
-              alt="Luxury Watch 1"
-              className="product-img"
-            />
-            <h3 className="product-name">The Elite Gold</h3>
-            <p className="product-description">
-              A masterpiece in gold and precision.
-            </p>
-          </div>
-          <div className="product-card">
-            <img
-              src={watch2}
-              alt="Luxury Watch 2"
-              className="product-img"
-            />
-            <h3 className="product-name">Chrono X Series</h3>
-            <p className="product-description">
-              Innovative design meets timeless elegance.
-            </p>
-          </div>
-          <div className="product-card">
-            <img
-              src={watch3}
-              alt="Luxury Watch 3"
-              className="product-img"
-            />
-            <h3 className="product-name">Alberto Sport</h3>
-            <p className="product-description">
-              For those who live life on the move.
-            </p>
-          </div>
-        </div>
+
+        {/* Products Grid */}
+        <section className="products-grid">
+          {products.map((product) => (
+            <div key={product.id} className="product-card">
+              <img src={product.image} alt={product.name} />
+              <h2>{product.name}</h2>
+              {/* <p>{product.description}</p> */}
+              <span className="price">{product.price}</span>
+              <button className="buy-btn">View Details</button>
+            </div>
+          ))}
+        </section>
       </section>
 
       {/* Why Choose Us */}
