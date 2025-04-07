@@ -1,16 +1,16 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import Nav from "./components/Nav"; // Import Navbar
-import './NAV BAR/nav';
-import Nav from './NAV BAR/nav';
-import Footer from './FOOTER/footer';
-import Home from './ROUTE/Home';
-import Products from './ROUTE/Products';
+import "./NAV BAR/nav";
+import Nav from "./NAV BAR/nav";
+import Footer from "./FOOTER/footer";
+import Home from "./ROUTE/Home";
+import Products from "./ROUTE/Products";
 import Technology from "./ROUTE/Technology";
 import StoreLocator from "./ROUTE/StoreLocator";
 import Support from "./ROUTE/Support";
 import About from "./ROUTE/About";
 import Contact from "./ROUTE/Contact";
-
+import Ticker from "./FOOTER/Ticker";
 
 // const Home = () => <h2 className="p-6">Welcome to Alberto Watch Company</h2>;
 // const Products = () => <h2 className="p-6">Explore our watch collections</h2>;
@@ -33,7 +33,8 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-        <Footer />
+      <Footer />
+      <Ticker />
     </Router>
   );
 };

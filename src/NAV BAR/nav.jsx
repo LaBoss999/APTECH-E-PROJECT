@@ -1,17 +1,34 @@
 import { Link, useLocation } from "react-router-dom";
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "./nav.css";
 import menu_open from "../assets/menu_open.svg";
 import menu_close from "../assets/menu_close.svg";
 
 const Nav = () => {
-  const location = useLocation(); // Ensure correct hook usage
+  const location = useLocation();
+  const menuRef = useRef();
+  const [visitorCount, setVisitorCount] = useState(0);
+
+  // 🔢 Increment visitor count on every visit (reload/page visit)
+  useEffect(() => {
+    // Get the stored visitor count from localStorage
+    const storedCount = localStorage.getItem("visitorCount");
+
+    // Increment visitor count if exists
+    if (storedCount) {
+      const newCount = parseInt(storedCount, 10) + 1;
+      localStorage.setItem("visitorCount", newCount); // Update localStorage with new count
+      setVisitorCount(newCount); // Set the updated count in state
+    } else {
+      // If count does not exist, set it to 1 for the first visit
+      localStorage.setItem("visitorCount", 1);
+      setVisitorCount(1);
+    }
+  }, []); // Empty dependency array to ensure this runs only once on mount
 
   const getBorderBottomColor = () => {
     return location.pathname === "/" ? "black" : "white";
   };
-
-  const menuRef = useRef();
 
   const openMenu = () => {
     if (menuRef.current) menuRef.current.style.right = "0";
@@ -24,7 +41,7 @@ const Nav = () => {
   return (
     <header className="bg-gray-900 text-white p-4">
       <nav
-        style={{ borderBottom: `3px solid ${getBorderBottomColor()}` }} // Corrected border style
+        style={{ borderBottom: `3px solid ${getBorderBottomColor()}` }}
         className="container mx-auto flex justify-between items-center"
         aria-label="Main Navigation"
       >
@@ -53,6 +70,11 @@ const Nav = () => {
           <li><Link to="/about" className="hover:text-yellow-400">About Us</Link></li>
           <li><Link to="/contact" className="hover:text-yellow-400">Contact Us</Link></li>
         </ul>
+
+        {/* 👇 Display visitor count */}
+        <div className="visitor-count">
+          Visits: {visitorCount}
+        </div>
       </nav>
     </header>
   );
