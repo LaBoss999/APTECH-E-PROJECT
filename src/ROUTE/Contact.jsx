@@ -12,18 +12,18 @@ const ContactUs = () => {
 
       {/* Contact Form */}
       <section className="contact-form-section">
-        <h2>Send Us a Message</h2>
+        <h2>Send Us a Message</h2><br />
         <form className="contact-form">
           <div className="input-group">
-            <label>Name</label>
+            <label>Name</label><br />
             <input type="text" placeholder="Your Name" required />
           </div>
           <div className="input-group">
-            <label>Email</label>
+            <label>Email</label><br />
             <input type="email" placeholder="Your Email" required />
           </div>
           <div className="input-group">
-            <label>Message</label>
+            <label>Message</label><br />
             <textarea placeholder="Write your message here..." required></textarea>
           </div>
           <button type="submit">Send Message</button>
@@ -32,18 +32,18 @@ const ContactUs = () => {
 
       {/* Contact Info */}
       <section className="contact-info">
-        <h2>Our Contact Details</h2>
+        <h2>Our Contact Details</h2><br />
         <div className="info-grid">
           <div className="info-box">
-            <h3>📍 Address</h3>
+            <h3>📍 Address</h3><br />
             <p>123 Business Street, Lagos, Nigeria</p>
           </div>
           <div className="info-box">
-            <h3>📞 Phone</h3>
+            <h3>📞 Phone</h3><br />
             <p>+234 810 123 4567</p>
           </div>
           <div className="info-box">
-            <h3>✉️ Email</h3>
+            <h3>✉️ Email</h3><br />
             <p>contact@monterodesigns.com</p>
           </div>
         </div>
@@ -51,7 +51,7 @@ const ContactUs = () => {
 
       {/* Google Maps Embed (Optional) */}
       <section className="map-section">
-        <h2>Find Us Here</h2>
+        <h2>Find Us Here</h2><br />
         <div className="map-container">
           <iframe
             title="Google Maps"

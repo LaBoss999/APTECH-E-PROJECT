@@ -12,7 +12,7 @@ const AboutUs = () => {
 
       {/* Our Story Section */}
       <section className="our-story">
-        <h2>Our Story</h2>
+        <h2>Our Story</h2><br />
         <p>
           Founded with passion and dedication, we have been committed to
           delivering exceptional services and products for years. Our journey is
@@ -22,7 +22,7 @@ const AboutUs = () => {
 
       {/* Our Mission Section */}
       <section className="our-mission">
-        <h2>Our Mission</h2>
+        <h2>Our Mission</h2><br />
         <p>
           Our mission is to provide top-notch solutions that enrich the lives of
           our customers. We believe in quality, transparency, and customer
@@ -35,19 +35,19 @@ const AboutUs = () => {
         <h2>Why Choose Us?</h2>
         <div className="features-grid">
           <div className="feature-box">
-            <h3>High-Quality Products</h3>
+            <h3>High-Quality Products</h3><br />
             <p>We ensure every product meets the highest standards.</p>
           </div>
           <div className="feature-box">
-            <h3>Dedicated Support</h3>
+            <h3>Dedicated Support</h3><br />
             <p>Our team is available 24/7 to assist you.</p>
           </div>
           <div className="feature-box">
-            <h3>Innovation & Excellence</h3>
+            <h3>Innovation & Excellence</h3><br />
             <p>We embrace new technologies to stay ahead.</p>
           </div>
           <div className="feature-box">
-            <h3>Trusted by Thousands</h3>
+            <h3>Trusted by Thousands</h3><br />
             <p>Thousands of satisfied customers rely on us daily.</p>
           </div>
         </div>

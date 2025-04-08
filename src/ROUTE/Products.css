@@ -125,7 +125,7 @@
   right: 10px;
   background: none;
   border: none;
-  font-size: 30px;
+  font-size: 50px;
   color: #fff;
   cursor: pointer;
 }
@@ -152,7 +152,7 @@
 
 @media (max-width: 768px) {
   .products-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
 
   .product-card {
